@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+    <style>
+        .p1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Atributos en HTML</h1>
+    </header>
+    <main>
+        <article>
+            <h2>¿Qu&eacute; son los atributos en HTML?</h2>
+            <p>Son elementos que modifican las características de un ekemento en HTML</p>
+        </article>
+        <article>
+            <h2>Atributos globales en HTML</h2>
+            <p>HTML cuenta con varios atributos por cada etiqueta, los que coloco aqu&iacute; son globales, lo que quiere decir que aplican/son aceptados por la mayoría de las etiquetas en HTML</p>
+            <section>
+                <h3>Algunos atributos globales</h3>
+                <article>
+                    <h4>class</h4>
+                    <p class="p1">Define la clase, se suele usar para dar estilo a trav&eacute;s de CSS</p>
+                </article>
+                <article>
+                    <h4>id</h4>
+                    <p id="001">Es un identificador &uacute;nico que se utiliza para seleccionar el elemento desde JS y para hacer una anvegación a trav&eacute;s de anclas.</p>
+                </article>
+                <article>
+                    <h4>title</h4>
+                    <p title="Ejemplo de title">Es un atributo que ayuda a la accesibilidad mostrando una descripci&oacute;n del elemento al que pertenece.</p>
+                </article>
+                <article>
+                    <h4>data-*</h4>
+                    <p data-s002="Mucha DATA" id="002">Es un atributo que nos permite guardar un valor en la etiqueta HTML</p>
+                </article>
+            </section>
+        </article>
+    </main>
+    <footer>
+        Atributos en HTML
+    </footer>
+    <script>
+        const p = document.getElementById("001")
+        console.log(p.textContent)
+
+        const p2 = document.getElementById("002")
+        console.log(p2.dataset.s002)
+    </script>
+</body>
+</html>
