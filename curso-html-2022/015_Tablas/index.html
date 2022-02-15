@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Tablas</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo-t2">Tablas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Ejemplo de tabla</h2>
+            <table>
+                <caption class="titulo-t1">
+                    El nombre de la tabla
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Exacto,</th>
+                        <th>Exacto</th>
+                        <th>:u</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Uno</td>
+                        <td>Tres</td>
+                        <td rowspan="2">Cuatro</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Uno</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Footer Uno</td>
+                        <td colspan="2">Footer Dos y tres</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <h2>Horario escolar</h2>
+            <table>
+                <caption>Horario de clases</caption>
+                <colgroup>
+                    <col span="2">
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>vulcan</td>
+                        <td>fuego</td>
+                        <td>luchador</td>
+                        <td>com&uacute;n</td>
+                        <td>faldas de los volcanes</td>
+                        <td>¿quién diría que un trozo de piedra fundida pudiera calentarse tanto que cobraría vida?</td>
+                    </tr>
+                    <tr>
+                        <td>mirimau</td>
+                        <td colspan="5" rowspan="2">en desarrollo</td>
+                    </tr>
+                    <tr>
+                        <td>garora</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>este documento se hizo con:</td>
+                        <td colspan="5">visual studio code</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <table>
+                <caption>segunda tabla de prueba</caption>
+                <colgroup>
+                    <col span="2">
+                    <col span="3">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>table head 1</th>
+                        <th>table head 2</th>
+                        <th>table head 3</th>
+                        <th>table head 4</th>
+                        <th>table head 5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>table data 1</td>
+                        <td>table data 2</td>
+                        <td>table data 3</td>
+                        <td>table data 4</td>
+                        <td>table data 5</td>
+                    </tr>
+                    <tr>
+                        <td>table data 1.1</td>
+                        <td>table data 2.1</td>
+                        <td>table data 3.1</td>
+                        <td>table data 4.1</td>
+                        <td>table data 5.1</td>
+                    </tr>
+                    <tr>
+                        <td>table data 1.2</td>
+                        <td>table data 2.2</td>
+                        <td>table data 3.2</td>
+                        <td>table data 4.2</td>
+                        <td>table data 5.2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>table foot 1</td>
+                        <td>table foot 2</td>
+                        <td>table foot 3</td>
+                        <td>table foot 4</td>
+                        <td>table foot 5</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

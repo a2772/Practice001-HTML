@@ -1,0 +1,30 @@
+td{
+    background-color: aquamarine;
+    border-style: dashed;
+}
+/* th{ 
+    background-color: burlywood;
+    border-style: groove;
+}*/
+.titulo-t1{
+    background-color: darkolivegreen;
+    color: white;
+}
+.titulo-t2{
+    background-color: lightcoral;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+col:nth-child(2){
+    background-color: lightcoral;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+col:nth-child(2){
+    background-color: lightcoral;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
