@@ -50,10 +50,21 @@
                 </ul>
             </article>
             <article>
-                <h3>Input radio</h3>
+                <h3>Input como seleccionable</h3>
                 <ul>
                     <li>radio: Permite seleccionar elementos de una lista de items</li>
+                    <li>checkbox: Permite marcar o desmarcar un valor</li>
                 </ul>
+            </article>
+            <article>
+                <h3>Seleccionables (desplegables principalmente)</h3>
+                <ul>
+                    <li>radio: Permite seleccionar elementos de una lista de items</li>
+                    <li>checkbox: Permite marcar o desmarcar un valor</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Titulo</h3>
             </article>
         </section>
         <section>
@@ -90,57 +101,94 @@
                     <p><label>text: </label><input type="text"></p>
                     <p><label>text(hidden): </label><input type="hidden"></p>
                     <p><label>url: </label><input type="url"></p>
+                </form>
             </article>
             <hr>
-            <section>
-                <h3>Tipos de menus/seleccionables</h3>
-                <p>Hay varios tipos como el input de radio, checkbox, seleccionables/desplegables</p>
-            </section>
-        </section>
-        <section>
-            <h3>Input radio</h3>
-            <form>
-                <p><label>Masculino<input type="radio" name="sexo" value="masculino" checked></label></label></p>
-                <p><label>Femenino<input type="radio" name="sexo" value="femenino" ></label></label></p>
-                <p><label>Prefiero no decir<input type="radio" name="sexo" value="otro" ></label></label></p>
-            </form>
-        </section>
-        <section>
-            <h3>Input checkbox</h3>
-            <form>
-                <p><label>Palomitas<input type="checkbox" name="comida" value="maiz" checked></label></label></p>
-                <p><label>Fresas<input type="checkbox" name="comida" value="fruta" ></label></label></p>
-            </form>
-        </section>
-        <section>
-            <h3>Seleccionables</h3>
-            <form>
-                <select name="languages" multiple>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="js">JS</option>
-                </select>
-            </form>
-            <form>
-                <input type="list" list="pets">
-                <select name="pets">
-                    <optgroup label="4 patas">
-                        <option value="perro">Perro</option>
-                        <option value="gato">Gato</option>
-                        <option value="hamster">H&aacute;mster</option>
-                        <option value="conejo">Conejo</option>
-                    </optgroup>
-                    <optgroup label="Aves">
-                        <option value="loro">Loro</option>
-                        <option value="canario">Canario</option>
-                    </optgroup>
-                    <optgroup label="otros">
-                        <option value="serpiente">Serpiente</option>
-                        <option value="tarantula">Tar&aacute;ntula</option>
-                    </optgroup>
-                </select>
-            </form>
+            <article>
+                <h3>Input radio</h3>
+                <form>
+                    <p><label>Masculino<input type="radio" name="sexo" value="masculino" checked></label></p>
+                    <p><label>Femenino<input type="radio" name="sexo" value="femenino" ></label></p>
+                    <p><label>Prefiero no decir<input type="radio" name="sexo" value="otro" ></label></p>
+                </form>
+            </article>
+            <article>
+                <h3>Input checkbox</h3>
+                <form>
+                    <p><label>Palomitas<input type="checkbox" name="comida" value="maiz" checked></label></p>
+                    <p><label>Fresas<input type="checkbox" name="comida" value="fruta" ></label></p>
+                </form>
+            </article>
+            <hr>
+            <article>
+                <h3>Seleccionables</h3>
+                <article>
+                    <h4>Seleccionable desde una lista simple y una multiple</h4>
+                    <article>
+                        <h5>Lista simple</h5>
+                        <form>
+                            <select name="languages">
+                                <option value="html">HTML</option>
+                                <option value="css">CSS</option>
+                                <option value="js">JS</option>
+                            </select>
+                        </form>
+                    </article>
+                    <article>
+                        <h5>Lista m&uacute;ltiple</h5>
+                        <form>
+                            <select name="languages" multiple>
+                                <option value="html">HTML</option>
+                                <option value="css">CSS</option>
+                                <option value="js">JS</option>
+                            </select>
+                        </form>
+                    </article>
+                </article>
+                <article>
+                    <h4>Lista desplegable separada por temas</h4>
+                    <form>
+                        <select name="pet">
+                            <optgroup label="4 patas">
+                                <option value="perro">Perro</option>
+                                <option value="gato">Gato</option>
+                                <option value="hamster">H&aacute;mster</option>
+                                <option value="conejo">Conejo</option>
+                            </optgroup>
+                            <optgroup label="Aves">
+                                <option value="loro">Loro</option>
+                                <option value="canario">Canario</option>
+                            </optgroup>
+                            <optgroup label="otros">
+                                <option value="serpiente">Serpiente</option>
+                                <option value="tarantula">Tar&aacute;ntula</option>
+                            </optgroup>
+                        </select>
+                    </form>
+                </article>
+                <article>
+                    <h4>Lista por b&uacute;squeda AKA Datalist</h4>
+                    <form>
+                        <input list="pets">
+                        <datalist id="pets">
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="hamster">H&aacute;mster</option>
+                            <option value="conejo">Conejo</option>
+                            <option value="loro">Loro</option>
+                            <option value="canario">Canario</option>
+                            <option value="serpiente">Serpiente</option>
+                            <option value="tarantula">Tar&aacute;ntula</option>
+                        </datalist>
+                    </form>
+                </article>
+            </article>
+            <hr>
         </section>
     </main>
+    <footer>
+        Elementos de los formularios 2022
+        <!-- https://validator.w3.org/nu/#textarea -->
+    </footer>
 </body>
 </html>
