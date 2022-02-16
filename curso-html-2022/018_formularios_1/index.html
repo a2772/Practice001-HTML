@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Tipos de elementos en un formulario</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Teor&iacute;a</h2>
+            <article>
+                <h3>Elementos b&aacute;sicos de un formulario</h3>
+                <dl>
+                    <dt>form</dt>
+                    <dd>Es la etiqueta que engloba el formulario.</dd>
+                    <dt>label</dt>
+                    <dd>Se usa para escribir el nombre del campo a rellenar.</dd>
+                    <dt>input</dt>
+                    <dd>Sirve para crear un campo para que el usuario pueda interactuar, usualmente le pedimos que seleccione o llene el input con determinada informaci&oacute;n</dd>
+                    <dt>button</dt>
+                    <dd>Es el bot&oacute;n que nos permitir&aacute; enviar el formulario.</dd>
+                </dl>
+            </article>
+            <article>
+                <h3>Tipos de input</h3>
+                <p>La etiqueta input puede tener varios tipos de entrada de dato seg&uacute;n le indiquemos.</p>
+                <ul>
+                    <li>button: Visualmente igual que un bot&oacute;n pero no env&iacute;a formularios</li>
+                    <li>submit: Se usa para enviar un formulario</li>
+                    <li>date: Se usa para introducir fechas</li>
+                    <li>date-time: Se usa para fecha y hora pero no funciona en firefox</li>
+                    <li>time: se usa para introducir</li>
+                    <li>month: Se usa para introducir un mes</li>
+                    <li>week: Se usa para introducir el n&uacute;mero de semana del año</li>
+                    <li>color: Permite seleccionar un color</li>
+                    <li>email: Se usa para introducir un email</li>
+                    <li>number: Solo admite n&uacute;meros</li>
+                    <li>password: se usa para introducir contraseñas</li>
+                    <li>range: Establece un rango</li>
+                    <li>reset: Reinicia el formulario</li>
+                    <li>search: Se usa para las barras de b&uacute;squeda</li>
+                    <li>tel: Se usa para introducir n&uacute;meros telef&acute;nicos</li>
+                    <li>text: Valor por defecto</li>
+                    <li>url: Se usa para introducir urls</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Input radio</h3>
+                <ul>
+                    <li>radio: Permite seleccionar elementos de una lista de items</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h2>Ejemplos</h2>
+            <hr>
+            <article>
+                <h3>Formulario b&aacute;sico</h3>
+                <!--action="recibeDatos.jsp"-->
+                <form>
+                    <label>Nombre: </label>
+                    <input type="text" placeholder="Escribe tu nombre">
+                    <button>Aceptar</button>
+                </form>
+            </article>
+            <hr>
+            <article>
+                <h3>Formulario con diferentes tipos de input</h3>
+                <!--action="recibeDatos.jsp"-->
+                <form>
+                    <p><label>button: </label><input type="button" value="boton"></p>
+                    <p><label>submit: </label><input type="submit"></p>
+                    <p><label>date: </label><input type="date"></p>
+                    <p><label>time: </label><input type="time"></p>
+                    <p><label>month: </label><input type="month"></p>
+                    <p><label>week: </label><input type="week"></p>
+                    <p><label>color: </label><input type="color"></p>
+                    <p><label>email: </label><input type="email"></p>
+                    <p><label>number: </label><input type="number"></p>
+                    <p><label>password: </label><input type="password"></p>
+                    <p><label>range: </label><input type="range" step="10" min="0" max="100"></p>
+                    <p><label>reset: </label><input type="reset"></p>
+                    <p><label>search: </label><input type="search"></p>
+                    <p><label>tel: </label><input type="tel"></p>
+                    <p><label>text: </label><input type="text"></p>
+                    <p><label>text(hidden): </label><input type="hidden"></p>
+                    <p><label>url: </label><input type="url"></p>
+            </article>
+            <hr>
+            <section>
+                <h3>Tipos de menus/seleccionables</h3>
+                <p>Hay varios tipos como el input de radio, checkbox, seleccionables/desplegables</p>
+            </section>
+        </section>
+        <section>
+            <h3>Input radio</h3>
+            <form>
+                <p><label>Masculino<input type="radio" name="sexo" value="masculino" checked></label></label></p>
+                <p><label>Femenino<input type="radio" name="sexo" value="femenino" ></label></label></p>
+                <p><label>Prefiero no decir<input type="radio" name="sexo" value="otro" ></label></label></p>
+            </form>
+        </section>
+        <section>
+            <h3>Input checkbox</h3>
+            <form>
+                <p><label>Palomitas<input type="checkbox" name="comida" value="maiz" checked></label></label></p>
+                <p><label>Fresas<input type="checkbox" name="comida" value="fruta" ></label></label></p>
+            </form>
+        </section>
+        <section>
+            <h3>Seleccionables</h3>
+            <form>
+                <select name="languages" multiple>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>
+                </select>
+            </form>
+            <form>
+                <input type="list" list="pets">
+                <select name="pets">
+                    <optgroup label="4 patas">
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="hamster">H&aacute;mster</option>
+                        <option value="conejo">Conejo</option>
+                    </optgroup>
+                    <optgroup label="Aves">
+                        <option value="loro">Loro</option>
+                        <option value="canario">Canario</option>
+                    </optgroup>
+                    <optgroup label="otros">
+                        <option value="serpiente">Serpiente</option>
+                        <option value="tarantula">Tar&aacute;ntula</option>
+                    </optgroup>
+                </select>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
