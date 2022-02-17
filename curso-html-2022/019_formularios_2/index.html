@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios parte 2</title>
+</head>
+<body>
+    <header>
+        <h1>Tipos de elementos en un formulario (parte 2)</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Teor&iacute;a</h2>
+            <article>
+                <h3>Etiquetas</h3>
+                <dl>
+                    <dt>fieldset</dt>
+                    <dd>Agrupa elementos de un formulario</dd>
+                    <dt>legend</dt>
+                    <dd>Se usa para representar con una etiqueta el contenido del fieldset</dd>
+                    <dt>file</dt>
+                    <dd>Se usa para cargar archivos y enviarlos desde un formulario</dd>
+                    <dt>meter</dt>
+                    <dd>Representa un valor dentro de un rango conocido</dd>
+                    <dt>progress</dt>
+                    <dd>Representa el progreso de una tarea</dd>
+                    <dt>textarea</dt>
+                    <dd>Se utiliza para introducir texto en un fomrulario</dd>
+                </dl>
+            </article>
+            <article>
+                <h3>Atributos</h3>
+                <dl>
+                    <dt>placeholder</dt>
+                    <dd>Da una pista al usuario de lo que se debe introducir</dd>
+                    <dt>Required</dt>
+                    <dd>Hace que un campo sea obligatorio de introducir</dd>
+                    <dt>readonly</dt>
+                    <dd>Hace que el campo sea de solo lectura</dd>
+                    <dt>min-max</dt>
+                    <dd>Establecen el valor m&iacute;nimo o m&aacute;ximo de un campo num&eacute;rico</dd>
+                    <dt>minlenght-maxlenght</dt>
+                    <dd>Establece el m&iacute;nimo y m&aacute;ximo de caracteres en un campo de texto</dd>
+                    <dt>selected</dt>
+                    <dd>Sirve para marcar como seleccionada una opci&oacute;n</dd>
+                    <dt>disabled</dt>
+                    <dd>Desactiva un campo, no se podr&aacute; escribir en el autofocus</dd>
+                </dl>
+            </article>
+        </section>
+        <section>
+            <h2>Pr&acute;ctica</h2>
+            <article>
+                <h3>Ejemplo 1</h3>
+                <form>
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <div>
+                            <label for="name">Nombre: </label>
+                            <input type="text" id="name">
+                        </div>
+                        <div>
+                            <label for="surname">Apellidos: </label>
+                            <input type="text" id="surname">
+                        </div>
+                        <div>
+                            <input type="file">
+                        </div>
+                        <div>
+                            <label for="fuel">Combustible: </label>
+                            <meter id="fuel" min="0" max="1000" value="900" low="200" optimum="500" high="800">
+                            </meter>
+                        </div>
+                        <div>
+                            <label for="task">Tarea: </label>
+                            <progress id="task" max="100" value="10"></progress>
+                        </div>
+                        <div>
+                            <label for="area"></label>
+                            <textarea name="mensaje" id="area" cols="50" rows="10"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+            <article>
+                <h3>Ejemplo 2</h3>
+                <form>
+                    <fieldset>
+                        <legend>Datos personales 2</legend>
+                        <div>
+                            <label for="name2">Nombre: </label>
+                            <input type="text" id="name2" placeholder="Tu nombre va aqu&iacute;" required autofocus>
+                        </div>
+                        <div>
+                            <label for="surname">Apellidos: </label>
+                            <input type="text" id="surname2" value="Ram&iacute;rez" readonly>
+                            <input type="text" id="surname3" value="Disabled no se env&iacute;a" disabled>
+                        </div>
+                        <div>
+                            <input type="number" min="0" max="10" step="0.5" required>
+                        </div>
+                        <div>
+                            <input type="text" minlength="3" maxlength="10" required>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </article>
+            <article>
+                <h3>Ejemplo GET POST</h3>
+                <form method="GET" action="nombre.jsp">
+                    <fieldset>
+                        <legend>Get</legend>
+                        <div>
+                            <label for="nameG">Nombre: </label>
+                            <input type="text" id="nameG" placeholder="Tu nombre va aqu&iacute;" required autofocus>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+                <form method="POST" action="nombre.jsp">
+                    <fieldset>
+                        <legend>Post</legend>
+                        <div>
+                            <label for="nameP">Nombre: </label>
+                            <input type="text" id="nameP" placeholder="Tu nombre va aqu&iacute;" required autofocus>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Elementos de los formularios 2022
+        <!-- https://validator.w3.org/nu/#textarea -->
+    </footer>
+</body>
+</html>

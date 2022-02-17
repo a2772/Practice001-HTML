@@ -1,0 +1,11 @@
+.img-sample1{
+    text-align: center;
+    max-width: 100%;
+}
+video{
+    max-width: 90%;
+}
+iframe{
+    height: 600px;
+    width: 600px;
+}
